@@ -1,0 +1,27 @@
+data:
+    root: ../data/OilChangeDataset
+    ann_file: 20171103_OilChange.json
+    train_all: true
+    batch_size: 16
+    classes: 11
+    class_names: [
+        background,
+        oil_bottle,
+        fluid_bottle,
+        oil_filter,
+        funnel,
+        engine,
+        blue_funnel,
+        tissue_box,
+        drill,
+        cracker_box,
+        spam
+    ]
+arch: drn_d_22
+optimizer:
+    lr: 0.001
+    momentum: 0.99
+    weight_decay: 0.0001
+training:
+    experiment_name: drn_d_22_OilChangeAll
+    resume: pretrained/drn_d_22_OilChangeAll/checkpoint_00000750.pth.tar

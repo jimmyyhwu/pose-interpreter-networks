@@ -1,0 +1,34 @@
+data:
+    root: ../data/OilChangeDataset
+    ann_file: 20171103_OilChange.json
+    train_all: false
+    batch_size: 16
+    workers: 4
+    classes: 11
+    class_names: [
+        background,
+        oil_bottle,
+        fluid_bottle,
+        oil_filter,
+        funnel,
+        engine,
+        blue_funnel,
+        tissue_box,
+        drill,
+        cracker_box,
+        spam
+    ]
+arch: drn_d_22
+optimizer:
+    lr: 0.001
+    momentum: 0.99
+    weight_decay: 0.0001
+training:
+    logs_dir: logs/
+    checkpoints_dir: checkpoints/
+    experiment_name: drn_d_22_OilChange
+    print_freq: 10
+    checkpoint_epochs: 50
+    epochs: 1000
+    log_dir:
+    resume:
