@@ -1,0 +1,5 @@
+<launch>
+  <rosparam command="load" file="$(find pose_interpreter_networks)/param/segmentation.yml" ns="segmentation" />
+  <rosparam command="load" file="$(find pose_interpreter_networks)/param/config.yml" />
+  <node name="segmenter" pkg="pose_interpreter_networks" type="segmenter.py" output="screen"/>
+</launch>

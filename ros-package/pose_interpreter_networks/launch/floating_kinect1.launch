@@ -1,0 +1,8 @@
+<launch>
+  <include file="$(find freenect_launch)/launch/freenect.launch">
+    <arg name="camera" value="floating_kinect1" />
+    <arg name="rgb_camera_info_url" value="file://$(find pose_interpreter_networks)/camera_info/rgb_A00362912201041A.yaml"/>
+    <arg name="depth_camera_info_url" value="file://$(find pose_interpreter_networks)/camera_info/depth_A00362912201041A.yaml"/>
+  </include>
+</launch>
+

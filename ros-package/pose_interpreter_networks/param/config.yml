@@ -1,0 +1,32 @@
+# visualization
+object_colors: [
+    'k',  # 0 background
+    'm',  # 1 oil_bottle
+    'w',  # 2 fluid_bottle
+    'c',  # 3 oilfilter
+    'g',  # 4 funnel
+    'b',  # 5 engine
+    'r',  # 6 blue_funnel
+    'orange',  # 7 tissue_box
+    'brown',  # 8 drill
+    'lime',  # 9 cracker_box
+    'yellow'   # 10 spam
+]
+pub_segmentation: false
+segmentation_alpha: 0.5
+stl_root: /home/jimmywu/pose-interpreter-networks/data/OilChangeDataset/meshes
+marker_alpha: 0.75
+marker_duration: 0.1
+frame_id: floating_kinect1_rgb_optical_frame
+
+# checkpoint locations
+segmentation_checkpoint: /home/jimmywu/pose-interpreter-networks/segmentation/pretrained/drn_d_22_OilChangeAll/checkpoint_00000750.pth.tar
+pose_estimation_checkpoint: /home/jimmywu/pose-interpreter-networks/pose_estimation/pretrained/floating_kinect1_mask/checkpoint_00002100.pth.tar
+
+# sub topics
+image_sub_topic: /floating_kinect1/rgb/image_rect_color
+info_sub_topic: /floating_kinect1/rgb/camera_info
+
+# pub topics
+segmentation_pub_topic: /output/segmentation
+pose_estimate_pub_topic: /output/pose_estimate
