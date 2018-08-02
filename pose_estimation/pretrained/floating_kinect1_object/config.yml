@@ -1,0 +1,31 @@
+data:
+    root: data/floating_kinect1_object
+    num_subsets: 100
+    val_subset_num: 101
+    objects: [
+        oil_bottle,
+        fluid_bottle,
+        funnel,
+        engine,
+        blue_funnel
+    ]
+    batch_size: 32
+arch:
+    num_input_channels: 3
+    num_shared_fc_layers: 1
+    num_shared_fc_nodes: 256
+    num_position_fc_layers: 1
+    num_position_fc_nodes: 256
+    num_orientation_fc_layers: 1
+    num_orientation_fc_nodes: 256
+    num_position_outputs: 15
+    num_orientation_outputs: 20
+loss: points # l1 | posecnn | points_simple | points
+optimizer:
+    lr: 0.01
+    lr_decay_epochs: [700, 1400]
+    momentum: 0.9
+    weight_decay: 0.0001
+training:
+    experiment_name: floating_kinect1_object
+    resume: pretrained/floating_kinect1_object/checkpoint_00002100.pth.tar

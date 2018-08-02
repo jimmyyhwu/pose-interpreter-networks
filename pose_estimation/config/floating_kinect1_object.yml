@@ -1,0 +1,37 @@
+data:
+    root: data/floating_kinect1_object
+    pcd_root: objects
+    num_subsets: 10
+    val_subset_num: 101
+    objects: [
+        oil_bottle,
+        fluid_bottle,
+        funnel,
+        engine,
+        blue_funnel
+    ]
+    batch_size: 32
+    workers: 4
+arch:
+    num_input_channels: 3
+    num_shared_fc_layers: 1
+    num_shared_fc_nodes: 256
+    num_position_fc_layers: 1
+    num_position_fc_nodes: 256
+    num_orientation_fc_layers: 1
+    num_orientation_fc_nodes: 256
+loss: points # l1 | posecnn | points_simple | points
+optimizer:
+    lr: 0.01
+    lr_decay_epochs: [700, 1400]
+    momentum: 0.9
+    weight_decay: 0.0001
+training:
+    logs_dir: logs/
+    checkpoints_dir: checkpoints/
+    experiment_name: floating_kinect1_object
+    print_freq: 10
+    checkpoint_epochs: 100
+    epochs: 10000
+    log_dir:
+    resume:

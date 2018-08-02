@@ -1,0 +1,32 @@
+data:
+    root: data/floating_kinect1_mask
+    num_subsets: 10
+    val_subset_num: 101
+    objects: [
+        oil_bottle,
+        fluid_bottle,
+        funnel,
+        engine,
+        blue_funnel
+    ]
+    batch_size: 32
+    max_circle_size: 24
+arch:
+    num_input_channels: 1
+    num_shared_fc_layers: 1
+    num_shared_fc_nodes: 256
+    num_position_fc_layers: 1
+    num_position_fc_nodes: 256
+    num_orientation_fc_layers: 1
+    num_orientation_fc_nodes: 256
+    num_position_outputs: 15
+    num_orientation_outputs: 20
+loss: points
+optimizer:
+    lr: 0.01
+    lr_decay_epochs: [900, 2800]
+    momentum: 0.9
+    weight_decay: 0.0001
+training:
+    experiment_name: floating_kinect1_mask_with_occlusion
+    resume: pretrained/floating_kinect1_mask_with_occlusion/checkpoint_00006700.pth.tar
