@@ -2,7 +2,7 @@
 
 This code release accompanies the following paper:
 
-### Real-Time Object Pose Estimation with Pose Interpreter Networks [[arXiv](TODO)] [[video](https://youtu.be/9QBw1NCOOR0)]
+### Real-Time Object Pose Estimation with Pose Interpreter Networks [[arXiv](https://arxiv.org/abs/1808.01099)] [[video](https://youtu.be/9QBw1NCOOR0)]
 
 Jimmy Wu, Bolei Zhou, Rebecca Russell, Vincent Kee, Syler Wagner, Mitchell Hebert, Antonio Torralba, and David M.S. Johnson
 
@@ -105,5 +105,10 @@ Apart from creation of the RGB segmentation dataset, camera calibration, and 3D 
 If you find this work useful for your research, please consider citing:
 
 ```
-TODO
+@article{wu2018pose,
+  title={Real-Time Object Pose Estimation with Pose Interpreter Networks},
+  author={Wu, Jimmy and Zhou, Bolei and Russell, Rebecca and Kee, Vincent and Wagner, Syler and Hebert, Mitchell and Torralba, Antonio and Johnson, David M. S.},
+  journal={arXiv preprint arXiv:1808.01099},
+  year={2018}
+}
 ```
