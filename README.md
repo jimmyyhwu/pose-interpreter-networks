@@ -106,9 +106,10 @@ If you find this work useful for your research, please consider citing:
 
 ```
 @article{wu2018pose,
+  author={J. Wu and B. Zhou and R. Russell and V. Kee and S. Wagner and M. Hebert and A. Torralba and D. M. S. Johnson},
+  booktitle={2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
   title={Real-Time Object Pose Estimation with Pose Interpreter Networks},
-  author={Wu, Jimmy and Zhou, Bolei and Russell, Rebecca and Kee, Vincent and Wagner, Syler and Hebert, Mitchell and Torralba, Antonio and Johnson, David M. S.},
-  journal={arXiv preprint arXiv:1808.01099},
-  year={2018}
+  year={2018},
 }
+
 ```
