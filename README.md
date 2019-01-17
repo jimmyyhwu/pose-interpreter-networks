@@ -105,11 +105,16 @@ Apart from creation of the RGB segmentation dataset, camera calibration, and 3D 
 If you find this work useful for your research, please consider citing:
 
 ```
-@article{wu2018pose,
-  author={J. Wu and B. Zhou and R. Russell and V. Kee and S. Wagner and M. Hebert and A. Torralba and D. M. S. Johnson},
-  booktitle={2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-  title={Real-Time Object Pose Estimation with Pose Interpreter Networks},
-  year={2018},
-}
-
+@INPROCEEDINGS{wu2018pose,
+author={J. Wu and B. Zhou and R. Russell and V. Kee and S. Wagner and M. Hebert and A. Torralba and D. M. S. Johnson},
+booktitle={2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+title={Real-Time Object Pose Estimation with Pose Interpreter Networks},
+year={2018},
+volume={},
+number={},
+pages={6798-6805},
+keywords={Pose estimation;Image segmentation;Three-dimensional displays;Quaternions;Real-time systems;Training;Task analysis},
+doi={10.1109/IROS.2018.8593662},
+ISSN={2153-0866},
+month={Oct},}
 ```
