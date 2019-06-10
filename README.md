@@ -6,7 +6,7 @@ This code release accompanies the following paper:
 
 Jimmy Wu, Bolei Zhou, Rebecca Russell, Vincent Kee, Syler Wagner, Mitchell Hebert, Antonio Torralba, and David M.S. Johnson
 
-*2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2018)*
+*IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2018)*
 
 **Abstract:** In this work, we introduce pose interpreter networks for 6-DoF object pose estimation. In contrast to other CNN-based approaches to pose estimation that require expensively annotated object pose data, our pose interpreter network is trained entirely on synthetic pose data. We use object masks as an intermediate representation to bridge real and synthetic. We show that when combined with a segmentation model trained on RGB images, our synthetically trained pose interpreter network is able to generalize to real data. Our end-to-end system for object pose estimation runs in real-time (20 Hz) on live RGB data, without using depth information or ICP refinement.
 
@@ -105,16 +105,11 @@ Apart from creation of the RGB segmentation dataset, camera calibration, and 3D 
 If you find this work useful for your research, please consider citing:
 
 ```
-@INPROCEEDINGS{wu2018pose,
-author={J. Wu and B. Zhou and R. Russell and V. Kee and S. Wagner and M. Hebert and A. Torralba and D. M. S. Johnson},
-booktitle={2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-title={Real-Time Object Pose Estimation with Pose Interpreter Networks},
-year={2018},
-volume={},
-number={},
-pages={6798-6805},
-keywords={Pose estimation;Image segmentation;Three-dimensional displays;Quaternions;Real-time systems;Training;Task analysis},
-doi={10.1109/IROS.2018.8593662},
-ISSN={2153-0866},
-month={Oct},}
+@inproceedings{wu2018pose,
+  title={Real-Time Object Pose Estimation with Pose Interpreter Networks},
+  author={Wu, Jimmy and Zhou, Bolei and Russell, Rebecca and Kee, Vincent and Wagner, Syler and Hebert, Mitchell and Torralba, Antonio and Johnson, David M.S.},
+  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year={2018},
+  doi={10.1109/IROS.2018.8593662}
+}
 ```
