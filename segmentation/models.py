@@ -8,7 +8,7 @@ import torch.utils.model_zoo as model_zoo
 __all__ = ['DRN', 'drn26', 'drn42', 'drn58']
 
 
-webroot = 'https://tigress-web.princeton.edu/~fy/drn/models/'
+webroot = 'http://dl.yf.io/drn/'
 
 model_urls = {
     'drn-c-26': webroot + 'drn_c_26-ddedf421.pth',
