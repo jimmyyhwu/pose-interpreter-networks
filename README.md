@@ -38,7 +38,7 @@ These are the basic dependencies (tested on Ubuntu 16.04.4 LTS) for training and
 - [COCO API](https://github.com/cocodataset/cocoapi)
 - `pypcd` (see [here](https://github.com/jimmyyhwu/pose-interpreter-networks/tree/master/pose_estimation#additional-requirements) for instructions)
 - `pillow`
-- `scikit-image`
+- `scikit-image==0.14.2`
 - `matplotlib`
 - `tqdm`
 - `jupyter`
