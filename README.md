@@ -107,10 +107,10 @@ If you find this work useful for your research, please consider citing:
 
 ```
 @inproceedings{wu2018pose,
-  title={Real-Time Object Pose Estimation with Pose Interpreter Networks},
-  author={Wu, Jimmy and Zhou, Bolei and Russell, Rebecca and Kee, Vincent and Wagner, Syler and Hebert, Mitchell and Torralba, Antonio and Johnson, David M.S.},
-  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-  year={2018},
-  doi={10.1109/IROS.2018.8593662}
+  title = {Real-Time Object Pose Estimation with Pose Interpreter Networks},
+  author = {Wu, Jimmy and Zhou, Bolei and Russell, Rebecca and Kee, Vincent and Wagner, Syler and Hebert, Mitchell and Torralba, Antonio and Johnson, David M.S.},
+  booktitle = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year = {2018},
+  doi = {10.1109/IROS.2018.8593662}
 }
 ```
