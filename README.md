@@ -6,7 +6,7 @@ This code release accompanies the following paper:
 
 Jimmy Wu, Bolei Zhou, Rebecca Russell, Vincent Kee, Syler Wagner, Mitchell Hebert, Antonio Torralba, and David M.S. Johnson
 
-*IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2018)*
+*IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)*, 2018
 
 **Abstract:** In this work, we introduce pose interpreter networks for 6-DoF object pose estimation. In contrast to other CNN-based approaches to pose estimation that require expensively annotated object pose data, our pose interpreter network is trained entirely on synthetic pose data. We use object masks as an intermediate representation to bridge real and synthetic. We show that when combined with a segmentation model trained on RGB images, our synthetically trained pose interpreter network is able to generalize to real data. Our end-to-end system for object pose estimation runs in real-time (20 Hz) on live RGB data, without using depth information or ICP refinement.
 
